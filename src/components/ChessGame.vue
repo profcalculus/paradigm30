@@ -4,7 +4,10 @@
       <div class = "row" >
       <div class='player-label'>{{playerLabel(true)}}</div>
       </div>
-    <chessboard :orientation="orientation" :fen="fen" ></chessboard>
+    <chessboard
+        :orientation="orientation"
+        :fen="fen"
+        :onPromotion="promote" ></chessboard>
       <div class = "row" >
       <div class='player-label'>{{playerLabel(false)}}</div>
       </div>
