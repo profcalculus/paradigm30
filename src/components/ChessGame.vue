@@ -1,6 +1,8 @@
 <template>
   <div class="p30_chessboard">
+      <div class='player-label'>{{playerLabel(true)}}</div>
     <chessboard :orientation="orientation" :fen="fen" ></chessboard>
+      <div class='player-label'>{{playerLabel(false)}}</div>
   </div>
 </template>
 
